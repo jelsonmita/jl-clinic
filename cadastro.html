@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro</title>
+</head>
+<body id="body">
+    <header id="header">
+        <nav class="container">
+          <a class="logo" href="index.html">JL*<span>Clínica</span>.</a>
+          <!--MENU-->
+          <div class="menu">
+            <ul class="grid">
+              <li><a class="title" href="index.html">Início</a></li>
+              <li><a class=title href="#about">Sobre</a></li>
+              <li><a class="title" href="#services">Serviços</a></li>
+              <li><a class=title href="#testimonials">Depoimentos</a></li>
+              <li><a class=title href="#contact">Contactos</a></li>
+              <a class="button1" href="login.html">Login</a>
+            </ul>
+          </div>
+          <!--/MENU-->
+          <div class="toggle icon-menu"></div>
+          <div class="toggle icon-close"></div>
+        </nav>
+      </header>
+    <div class="main-container">
+        <h1>Criar conta</h1>
+        <form id="register-form">
+            <div class="container2 space">
+                <label>Nome</label>
+                <input type="text" required name="name" autofocus placeholder="Primeiro nome">
+            </div>
+            <div class="container2 space">
+                <label>Sobrenome</label>
+                <input type="text" required name="sobrenome" autofocus placeholder="Último nome">
+            </div>
+            <div class="container2 space">
+                <label>Email</label>
+                <input type="email" required name="email" placeholder="Insira o E-mail">
+            </div>
+
+            <div class="container2 space">
+                <label>Telefone</label>
+                <input type="tel" required name="phone" placeholder="Número de telefone">
+            </div><br>
+
+            <div class="container2 space">
+                <label>Password</label>
+                <input type="password" required name="senha" placeholder="Insira a senha">
+            </div>
+
+            <div class="container2">
+                <label>Idade</label>
+                <input type="number" id="data_nascimento" required name="data_nascimento" placeholder="Insira sua idade">
+            </div>
+
+            <div class="container2 space">
+                <label for="b-i">B.I</label>
+                <input type="text" required name="bilhete" placeholder="Insira seu nº do B.I">
+            </div>
+            
+            <div class="container2">
+                <label>Morada</label>
+                <input type="text" required name="morada" placeholder="Insira sua morada">
+            </div>
+        
+            <div class="container1">
+                <input type="checkbox" id="accept" required name="accept">
+                <label for="accept" id="accept-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+            </div>
+
+            <div class="container1">
+                <input type="submit" id="btn" value="Registar">
+            </div>
+            <div class="cadastro">
+                Já tem conta? <a href="login.html">Iniciar sessãoe</a>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <p class="error-validation template"></p>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
