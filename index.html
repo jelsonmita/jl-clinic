@@ -10,6 +10,7 @@
   <!--ESTILOS-->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/fonts/style.css">
+  <link rel="stylesheet" href="./assets/css/pop_up_style.css">
 
   <!--FONTES-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +21,9 @@
 
   <!-- Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
@@ -54,12 +58,9 @@
 
         </div>
         <div class="text">
-          <h2 class="title">Agente já sua consulta e para o bem de sua saúde</h2>
-          <p>
-            Uma Clínica, especializada em tratamentos para sua saúde.
-
-          </p>
-          <a class="button" href="formulario.html">Marcar consulta</a>
+          <h2 class="title">Agende já sua consulta e para o bem de sua saúde</h2>
+          <p>Uma Clínica, especializada em tratamentos para sua saúde.</p>
+          <button class="button">Marcar consulta</button>
         </div>
       </div>
     </section>
@@ -315,9 +316,72 @@
       </div>
     </div>
   </footer>
+  <div class="dark_bg">
+    <div id="container">
+      <div id="contactInfo">
+        <div>
+          <h2>Contact Info</h2>
+          <ul id="info">
+            <li>
+              <span><img src="./assets/icons/map-marker-alt.svg" alt="Map Marker"></i></span>
+              <span>28, zona comercial <br />
+                Lobito, BG <br />
+                9001</span>
+            </li>
+            <li>
+              <span><img src="./assets/icons/envelope.svg" alt="Envelope Icon"></i></span>
+              <span>Lorem@Ipsum.com</span>
+            </li>
+            <li>
+              <span><img src="./assets/icons/phone-alt.svg" alt="Phone Icon"></i></span>
+              <span>935425456</span>
+            </li>
+          </ul>
+        </div>
+        <ul id="sci">
+          <li><a href="#"><img id="fb" src="./assets/icons/facebook-f.svg" alt="Facebook Icon"></a></li>
+          <li><a href="#"><img src="./assets/icons/instagram.svg" alt="Instagram Icon"></a></li>
+          <li><a href="#"><img src="./assets/icons/linkedin-in.svg" alt="LinkedIn Icon"></a></li>
+          <li><a href="#"><img src="./assets/icons/twitter.svg" alt="Twitter Icon"></a></li>
+          <li><a href="#"><img src="./assets/icons/whatsapp.svg" alt="Whatsapp Icon"></a></li>
+        </ul>
+      </div>
+      <div id="contactForm">
+        <h2>Send Message</h2>
+        <div id="formBox">
+          <div class="inputBox w50">
+            <input type="text" required>
+            <span>First Name</span>
+          </div>
+          <div class="inputBox w50">
+            <input type="text" required>
+            <span>Last Name</span>
+          </div>
+          <div class="inputBox w50">
+            <input type="text" required>
+            <span>Email Adress</span>
+          </div>
+          <div class="inputBox w50">
+            <input type="text" required>
+            <span>Mobile Number</span>
+          </div>
+          <div class="inputBox w100">
+            <textarea required></textarea>
+            <span>Write your message here...</span>
+          </div>
+          <div class="inputBox w100">
+            <input type="submit" value="Send">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
 
   <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
-
+  <!-- toggler -->
+  <script src="./assets/js/toggle_form.js"></script>
+  
   <!-- swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
