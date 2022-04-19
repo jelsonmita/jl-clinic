@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+          <a class="logo" href="index.html">JL*<span>Clínica</span>.</a>
+          <!--MENU-->
+          <div class="menu">
+            <ul class="grid">
+              <li><a class="title" href="index.html">Início</a></li>
+              <li><a class=title href="#about">Sobre</a></li>
+              <li><a class="title" href="#services">Serviços</a></li>
+              <li><a class=title href="#testimonials">Depoimentos</a></li>
+              <li><a class=title href="#contact">Contactos</a></li>
+              <a class="button1" href="cadastro.html">Cadastrar</a>
+            </ul>
+          </div>
+          <!--/MENU-->
+          <div class="toggle icon-menu"></div>
+          <div class="toggle icon-close"></div>
+        </nav>
+      </header>
+    <div class="main-container">
+        <h1 id="title">Iniciar sessão</h1>
+        <form method="post">
+            <div class="txt-field">
+                <input type="text" required>
+                <span></span>
+                <label for="username">Username</label>
+            </div>
+            <div class="txt-field">
+                <input type="password" required>
+                <span></span>
+                <label for="password">Password</label>
+            </div>
+            <div class="pass">Esqueci a senha</div>
+            <input type="submit" value="login">
+            <div class="cadastro">
+                Não tem conta? <a href="cadastro.html">Cadastrar</a>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
