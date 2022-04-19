@@ -409,6 +409,9 @@ nav.show div.icon-close{
   background: white;
 }
 
+#testimonials .off-show{
+display: none;}
+
 #testmonials .container{
   margin-left: 0;
   margin-right: 0;
