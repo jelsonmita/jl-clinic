@@ -19,9 +19,6 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
     rel="stylesheet">
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -35,8 +32,8 @@
       <div class="menu">
         <ul class="grid">
           <li><a class="title" href="#home">Início</a></li>
-          <li><a class=title href="about.html">Sobre</a></li>
-          <li><a class="title" href="service.html">Serviços</a></li>
+          <li><a class=title href="#about">Sobre</a></li>
+          <li><a class="title" href="#services">Serviços</a></li>
           <li><a class=title href="#testimonials">Depoimentos</a></li>
           <li><a class=title href="#contact">Contactos</a></li>
           <a class="button1" href="login.html">Login</a>
@@ -54,8 +51,6 @@
       <div class="container grid">
         <div class="image">
           <img src="assets/image/img7.jpg" alt="Homem de braços cruzados" class=title>
-
-
         </div>
         <div class="text">
           <h2 class="title">Agende já sua consulta e para o bem de sua saúde</h2>
@@ -71,10 +66,7 @@
     <section class="section" id="about">
       <div class="container grid">
         <div class="image">
-          <img src="assets/image/img7.jpg" alt="" />
-
-
-
+          <img src="assets/image/img3.jpg" alt="" />
         </div>
         <div class="text">
           <h2 class="title">Sobre Nós</h2>
@@ -98,7 +90,6 @@
             quaerat quis necessitatibus at odit, dolores dicta, officia ab
             quos. Provident, quae.
           </p>
-          <a class="button3" href="about.html">Ler mais</a>
         </div>
       </div>
     </section>
@@ -118,7 +109,7 @@
         </header>
         <div class="cards grid">
           <div class="card">
-            <i class="icon-woman-hair"></i>
+            <i class="icon-care"></i>
             <h3 class="title">Consultas Especializadas</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -127,7 +118,7 @@
             </p>
           </div>
           <div class="card">
-            <i class="icon-trim"></i>
+            <i class="icon-injection"></i>
             <h3 class="title">Exames básicos</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -136,7 +127,7 @@
             </p>
           </div>
           <div class="card">
-            <i class="icon-trim"></i>
+            <i class="icon-healing"></i>
             <h3 class="title">Oftamologia</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -145,7 +136,7 @@
             </p>
           </div>
           <div class="card">
-            <i class="icon-trim"></i>
+            <i class="icon-aid"></i>
             <h3 class="title">Oncologia</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -154,7 +145,7 @@
             </p>
           </div>
           <div class="card">
-            <i class="icon-trim"></i>
+            <i class="icon-analysis"></i>
             <h3 class="title">Epidemiologia</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -163,7 +154,7 @@
             </p>
           </div>
           <div class="card">
-            <i class="icon-cosmetic"></i>
+            <i class="icon-health"></i>
             <h3 class="title">Radiologia</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
@@ -173,20 +164,19 @@
           </div>
         </div>
       </div>
-      <a class="button4" href="service.html">Ler mais</a>
     </section>
 
     <div class="divider-1"></div>
 
     <!--TETIMONIALS-->
-    <section class="section" id="testimonials">
+    <section class="carousel" id="testimonials">
       <div class="container">
         <header>
           <h2 class="title">Depoimentos de quem já passou por aqui</h2>
         </header>
-        <div class="testimonials swiper-container">
-          <div class="swiper-wrapper">
-            <div class="testimonials swiper-slide off-show">
+        <div id="carousel_slide1" tabindex="0" class="carousel_slide">
+          <div class="carousel_snapper">
+            <div class="carousel_slide4">
               <blockquote>
                 <p>
                   <span>&ldquo;</span>
@@ -201,7 +191,7 @@
               </blockquote>
             </div>
 
-            <div class="testimonials swiper-slide off-show">
+            <div class="carousel_slide2">
               <blockquote>
                 <p>
                   <span>&ldquo;</span>
@@ -210,13 +200,13 @@
                   ipsam neque
                 </p>
                 <cite>
-                  <img src="assets/image/jelson.jpg" alt="Foto De Jelson Mita" />
-                  Jelson Mita
+                  <img src="assets/image/frank.jpg" alt="Foto De Gregório Francisco" />
+                  Gregório Francisco
                 </cite>
               </blockquote>
             </div>
 
-            <div class="testimonials swiper-slide off-show">
+            <div class="testimonials">
               <blockquote>
                 <p>
                   <span>&ldquo;</span>
@@ -225,13 +215,13 @@
                   ipsam neque
                 </p>
                 <cite>
-                  <img src="assets/image/jelson.jpg" alt="Foto De Jelson Mita" />
-                  Jelson Mita
+                  <img src="assets/image/misael.jpg" alt="Foto De Misael Lopes" />
+                  Misael Lopes
                 </cite>
               </blockquote>
             </div>
               
-            <div class="testimonials swiper-slide">
+            <div class="testimonials">
               <blockquote>
                 <p>
                   <span>&ldquo;</span>
@@ -246,7 +236,7 @@
               </blockquote>
             </div>
 
-            <div class="testimonials swiper-slide">
+            <div class="testimonials">
               <blockquote>
                 <p>
                   <span>&ldquo;</span>
@@ -262,8 +252,6 @@
             </div>
           </div>
 
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -275,7 +263,7 @@
         <div class="text">
           <h2 class="title">Entre em contacto con a gente!</h2>
           <p>
-            Entre em contato com a Beautysalon, queremos tirar suas dúvidas,
+            Entre em contato com a JL-Clinica, queremos tirar suas dúvidas,
             ouvir suas críticas e sugestões.
 
           </p>
@@ -316,6 +304,7 @@
       </div>
     </div>
   </footer>
+  <!--
   <div class="dark_bg">
     <div id="container">
       <div id="contactInfo">
@@ -351,23 +340,23 @@
         <div id="formBox">
           <div class="inputBox w50">
             <input type="text" required>
-            <span>First Name</span>
+            <span>Primeiro Nome</span>
           </div>
           <div class="inputBox w50">
             <input type="text" required>
-            <span>Last Name</span>
+            <span>Último Nome</span>
           </div>
           <div class="inputBox w50">
             <input type="text" required>
-            <span>Email Adress</span>
+            <span>Endereço Email</span>
           </div>
           <div class="inputBox w50">
             <input type="text" required>
-            <span>Mobile Number</span>
+            <span>Telefone</span>
           </div>
           <div class="inputBox w100">
             <textarea required></textarea>
-            <span>Write your message here...</span>
+            <span>Escreva aqui sua mensagem...</span>
           </div>
           <div class="inputBox w100">
             <input type="submit" value="Send">
@@ -376,11 +365,12 @@
       </div>
     </div>
   </section>
+  -->
   </div>
 
   <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
   <!-- toggler -->
-  <script src="./assets/js/toggle_form.js"></script>
+  <script src="./assets/js/toggle_form.j"></script>
   
   <!-- swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

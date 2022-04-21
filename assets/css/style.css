@@ -97,54 +97,18 @@ body {
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
+  border: 4px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .button1:hover {
   background: var(--base-color-alt);
-  height: 2rem;
+  height: 3rem;
 }
 
 .button:hover {
   background: var(--base-color-alt);
-}
-
-
-.button4:hover {
-  background: var(--base-color-alt);
-}
-
-.button3:hover {
-  background: var(--base-color-alt);
-}
-
-.button3 {
-  background-color: var(--base-color);
-  color: var(--text-color-light);
-  height: 3.5rem;
-  margin-top: 1rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 1rem;
-  border-radius: 0.25rem;
-  font: 500 1rem var(--body-font);
-  transition: background 0.3s;
-}
-
-.button4{
-  background-color: var(--base-color);
-  color: var(--text-color-light);
-  display: flex;
-  height: 3.5rem;
-  padding: 0 1rem;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: 16px;
-  border-radius: 0.25rem;
-  font: 500 1rem var(--body-font);
-  transition: background 0.3s;
 }
 
 .divider-1 {
@@ -253,6 +217,7 @@ nav ul li a::after {
   position: absolute;
   left: 0;
   bottom: -1.5rem;
+  
 }
 nav ul li a:hover::after {
   width: 100%;
@@ -371,7 +336,6 @@ nav.show div.icon-close{
 
 #about .container {
   margin: 0;
-  grid-auto-flow: column;
 }
 #about .image {
   position: relative;
@@ -382,7 +346,7 @@ nav.show div.icon-close{
   width: 100%;
   background: var(--base-color-second);
   position: absolute;
-  top: -8.5%;
+  top: -15.3%;
   left: -33%;
   z-index: 0;
 }
@@ -583,6 +547,7 @@ footer .social a:hover {
 
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 1200 > */
+
 @media (min-width: 1200px) {
 
   .container{
@@ -620,33 +585,9 @@ footer .social a:hover {
     transition: background 0.3s;
   }
 
-  .button4{
-    background-color: var(--base-color);
-    color: var(--text-color-light);
-    display: flex;
-    height: 3.5rem;
-    padding: 0 1rem;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-left: 45%;
-    margin-right: 45%;
-    margin-top: 16px;
-    border-radius: 0.25rem;
-    font: 500 1rem var(--body-font);
-    transition: background 0.3s;
-  }
   
   
   .button1:hover {
-    background: var(--base-color-alt);
-  }
-
-  .button4:hover {
-    background: var(--base-color-alt);
-  }
-
-  .button3:hover {
     background: var(--base-color-alt);
   }
 
@@ -704,6 +645,22 @@ footer .social a:hover {
     grid-auto-flow: column;
     margin: 0 auto;
   }
+  #about .image img {
+    position: relative;
+    right: auto;
+  }
+
+  #about .image::before {
+    content: '';
+    height: 90%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    bottom: -60%;
+    left: -16.7%;
+    z-index: 0;
+  }
 
   /*services*/
   .cards{
@@ -713,6 +670,10 @@ footer .social a:hover {
   .card{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .card .title{
+    font-size: 1.2rem;
   }
 
   /*TESTIMONIALS*/
@@ -750,118 +711,19 @@ footer .social a:hover {
 }
 /* large devices: 1023 > */
 /* large devices: 992 > */
-@media (min-width: 992px) {
+@media (max-width: 999px) {
   :root {
     --title-font-size: 1.25rem;
     --subtitle-font-size: 1.125rem;
   }
+  .cards{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 580px){
+  .cards{
+    grid-template-columns: 1fr;
+  }
 }
 /* medium devices: 767 > */
-
-/*CADASTRO
-
-
-#body{
-  padding-top: 5vh;
-  background-size: cover;
-  background-position-y: -150px;
-    
-}
-
-
-.main-container{
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3.5rem;
-  --text-color: hsl(0 0% 46%);;
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 1px 19px 15px 16px rgba(0,0,0,0.05);
-}
-
-.main-container h1{
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 1.6rem;
-}
-
-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.cadastro a, label a{
-  color: rgb(142, 218, 218);
-}
-
-.container1{
-  flex: 1 1 100%;
-  position: relative;
-}
-
-.container2{
-  flex: 1 1 45%;
-  position: relative;
-}
-
-.space{
-  margin-right: 2.5%;
-}
-
-label{
-  font-weight: bold;
-  font-size: .8rem;
-}
-
-input{
-  border-bottom: 2px solid #323232;
-  padding: 10px;
-  font-size: .9rem;
-  margin-bottom: 40px; 
-}
-
-input:focus{
-  border-color:  rgb(59, 59, 226);
-}
-
-input[type="submit"]{
-  background-color: rgb(59, 59, 226);
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  height: 40px;
-  cursor: pointer;
-}
-
-input, label{
-  display: block;
-  width: 100%;
-}
-
-input:focus label:focus{
-  outline: none;
-}
-
-
-#accept{
-  margin-right: 5px;
-}
-
-#accept, #accept-label{
-  display: inline-block;
-  width: auto;
-}
-
-.error-validation{
-  color: #ff1a1a;
-  position: absolute;
-  top: 57px;
-  font-size: .8rem;
-}
-
-.template{
-  display: none;
-}
-*/

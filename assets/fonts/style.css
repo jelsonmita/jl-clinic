@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?36sfdv');
-  src:  url('fonts/icomoon.eot?36sfdv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?36sfdv') format('truetype'),
-    url('fonts/icomoon.woff?36sfdv') format('woff'),
-    url('fonts/icomoon.svg?36sfdv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?8jlxxn');
+  src:  url('fonts/icomoon.eot?8jlxxn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8jlxxn') format('truetype'),
+    url('fonts/icomoon.woff?8jlxxn') format('woff'),
+    url('fonts/icomoon.svg?8jlxxn#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  /*speak: never;*/
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,42 +25,60 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-up:before {
-  content: "\e90c";
-}
-.icon-phone:before {
+.icon-care:before {
   content: "\e900";
 }
-.icon-close:before {
+.icon-injection:before {
   content: "\e901";
 }
-.icon-cosmetic:before {
+.icon-healing:before {
   content: "\e902";
 }
-.icon-facebook:before {
+.icon-aid:before {
   content: "\e903";
 }
-.icon-instagram:before {
+.icon-analysis:before {
   content: "\e904";
 }
-.icon-mail:before {
+.icon-health:before {
   content: "\e905";
 }
-.icon-map-pin:before {
+.icon-diagnosis:before {
   content: "\e906";
 }
-.icon-menu:before {
+.icon-healthcare_lab:before {
   content: "\e907";
 }
-.icon-trim:before {
+.icon-healthcare:before {
   content: "\e908";
 }
-.icon-whatsapp:before {
+.icon-safe:before {
   content: "\e909";
 }
-.icon-woman-hair:before {
+.icon-phone:before {
   content: "\e90a";
 }
-.icon-youtube:before {
+.icon-close:before {
   content: "\e90b";
+}
+.icon-facebook:before {
+  content: "\e90c";
+}
+.icon-instagram:before {
+  content: "\e90d";
+}
+.icon-mail:before {
+  content: "\e90e";
+}
+.icon-map-pin:before {
+  content: "\e90f";
+}
+.icon-menu:before {
+  content: "\e910";
+}
+.icon-whatsapp:before {
+  content: "\e911";
+}
+.icon-youtube:before {
+  content: "\e912";
 }

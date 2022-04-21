@@ -197,7 +197,7 @@
 }
 @media (max-width: 991px) {
   section {
-    background: #fff38e;
+    
   }
   section::before {
     display: none;
