@@ -678,13 +678,13 @@ footer .social a:hover {
 
   /*TESTIMONIALS*/
   #testimonials .container{
-    margin-left: ;
-    margin-right: ;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   
 #testimonials blockquote{
-  padding: ;
+  padding: auto;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 1.25rem;
 }
@@ -711,11 +711,7 @@ footer .social a:hover {
   padding: 0;
   width: 100%;
  
-  /* 
-    deixa todos os itens da lista
-     na horizontal e todos com a
-    mesma largura
-  */
+
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
