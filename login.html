@@ -11,14 +11,14 @@
 
     <div class="main-container">      
         <h1 id="title">Iniciar sessão</h1>
-        <form method="post">
+        <form method="POST">
             
           <div class="txt-field first">
-            <input type="email" required>
+            <input type="email" required name="email">
             <label>Email</label>
           </div>
           <div class="txt-field last">
-              <input type="password" required>
+              <input type="password" required name="senha">
               <label>Password</label>
           </div>
 
@@ -34,66 +34,5 @@
   <a href="index.html">Voltar para página inical</a>
   
   <script src="assets/js/main.js"></script>
-
-  <!--?php
-    if(isset($_POST['name']))
-    {
-        $name = addslashes$_POST['name'];
-        $sobrenome = addslashes$_POST['sobrenome'];
-        $email = addslashes$_POST['email'];
-        $password = addslashes$_POST['password'];
-        $data_nascimento = addslashes$_POST['data_nascimento'];
-        $conf_password = addslashes$_POST['conf_password'];
-        $morada = addslashes$_POST['morada'];
-
-        //Verificar campos vazios
-        if(!empty($name) && !empty($sobrenome) && !empty($email) && !empty($password) && !empty($data_nascimento) && !empty($bil$conf_passwordhete) && !empty($morada))
-        {
-            $u->conectar("Login_project","localhost","root","");
-            if($u->msErro == "")
-            {
-                if($password == $conf_password)
-                {
-                    if($u->cadastrar($name, $sobrenome, $email, $password, $data_nascimento, $$conf_password, $morada))
-                    {
-                        ?>
-                        <div id="msg-sucesso">
-                            Cadastrado com sucesso!
-                        </div>
-                        <?php
-                    }
-                    else{
-                        ?>
-                        <div class="msg-erro">
-                            Email já cadastrado
-                        </div>
-                        <?php
-                    }
-                }
-                else{
-                    ?>
-                    <div class="msg-erro">
-                        Password e Confirmar Password não correspondem!
-                    </div>
-                    <?php
-                }
-
-            }else{
-                ?>
-                <div class="msg-erro">
-                    <?php echo "Erro: ".$u->msgErro;?>
-                </div>
-                <?php
-            }
-        }
-        else
-        {
-            ?>
-            <div class="msg-erro">
-                Preencha todos os campos!
-            </div>
-            <?php
-        }
-    }-->
 </body>
 </html>
