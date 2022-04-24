@@ -1,3 +1,9 @@
+<?php
+    require_once 'classes/users.php';
+    $u = new User
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,7 +21,7 @@
       </header>
     <div class="main-container">
         <h1 id="title">Criar conta</h1>
-        <form id="register-form">
+        <form method="post" id="register-form">
             <div class="txt-field">
                 <input type="text" required name="name" autofocus>
                 <label>Nome</label>
@@ -30,20 +36,22 @@
                 <input type="email" required name="email">
                 <label>Email</label>
             </div>
-
-            <div class="txt-field">
-                <input type="password" required name="senha">
-                <label>Password</label>
-            </div>
-
+            
             <div class="txt-field">
                 <input type="date" id="data_nascimento" required name="data_nascimento">
                 <label hidden>Data de nascimento</label>
             </div>
+
             <div class="txt-field">
-                <input type="text" required name="bilhete">
-                <label for="b-i">B.I</label>
+                <input type="password" required name="password">
+                <label>Password</label>
             </div>
+
+            <div class="txt-field">
+                <input type="password" required name="conf_password">
+                <label for="conf_password">Confirmar Password</label>
+            </div>
+
             <div class="txt-field">
                 <input type="text" required name="morada">
                 <label>Morada</label>
@@ -85,5 +93,68 @@
             }); */
         });
     </script>
+
+    <?php
+    if(isset($_POST['name']))
+    {
+        $name = addslashes$_POST['name'];
+        $sobrenome = addslashes$_POST['sobrenome'];
+        $email = addslashes$_POST['email'];
+        $password = addslashes$_POST['password'];
+        $data_nascimento = addslashes$_POST['data_nascimento'];
+        $conf_password = addslashes$_POST['conf_password'];
+        $morada = addslashes$_POST['morada'];
+
+        //Verificar campos vazios
+        if(!empty($name) && !empty($sobrenome) && !empty($email) && !empty($password) && !empty($data_nascimento) && !empty($bil$conf_passwordhete) && !empty($morada))
+        {
+            $u->conectar("Login_project","localhost","root","");
+            if($u->msErro == "")
+            {
+                if($password == $conf_password)
+                {
+                    if($u->cadastrar($name, $sobrenome, $email, $password, $data_nascimento, $$conf_password, $morada))
+                    {
+                        ?>
+                        <div id="msg-sucesso">
+                            Cadastrado com sucesso!
+                        </div>
+                        <?php
+                    }
+                    else{
+                        ?>
+                        <div class="msg-erro">
+                            Email já cadastrado
+                        </div>
+                        <?php
+                    }
+                }
+                else{
+                    ?>
+                    <div class="msg-erro">
+                        Password e Confirmar Password não correspondem!
+                    </div>
+                    <?php
+                }
+
+            }else{
+                ?>
+                <div class="msg-erro">
+                    <?php echo "Erro: ".$u->msgErro;?>
+                </div>
+                <?php
+            }
+        }
+        else
+        {
+            ?>
+            <div class="msg-erro">
+                Preencha todos os campos!
+            </div>
+            <?php
+        }
+    }
+    
+    ?>
 </body>
 </html>

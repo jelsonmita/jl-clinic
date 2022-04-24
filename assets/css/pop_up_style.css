@@ -196,9 +196,12 @@
   }
 }
 @media (max-width: 991px) {
-  section {
-    
-  }
+  .section header, #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
   section::before {
     display: none;
   }

@@ -98,13 +98,10 @@ body {
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
   border: 4px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .button1:hover {
   background: var(--base-color-alt);
-  height: 3rem;
 }
 
 .button:hover {
@@ -332,6 +329,7 @@ nav.show div.icon-close{
 /*========ABOUT=====*/
 #about {
   background: white;
+  overflow: hidden;
 }
 
 #about .container {
@@ -339,6 +337,8 @@ nav.show div.icon-close{
 }
 #about .image {
   position: relative;
+  left: 2.93rem;
+  
 }
 #about .image::before {
   content: '';
@@ -362,7 +362,9 @@ nav.show div.icon-close{
 #about .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  text-align: center;
 }
+
 
 /*========CARDS=====*/
 .cards.grid{
@@ -662,7 +664,20 @@ footer .social a:hover {
     z-index: 0;
   }
 
+  #about .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: right;
+}
+
+#about .text .title {
+  order: 0;
+  max-width: 24rem;
+  text-align: center;
+}
+
   /*services*/
+
   .cards{
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -772,6 +787,7 @@ footer .social a:hover {
     --title-font-size: 1.25rem;
     --subtitle-font-size: 1.125rem;
   }
+
   .cards{
     grid-template-columns: 1fr 1fr;
   }
